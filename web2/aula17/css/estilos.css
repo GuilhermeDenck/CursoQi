@@ -1,0 +1,31 @@
+#titulo1 {
+    color: crimson;
+    text-align: center;
+
+}
+
+ul.quadrado{
+    list-style-type: circle;
+}
+
+ol.letras{
+    list-style-type: lower-alpha;
+}
+
+.menu ul{
+    list-style-type: none;
+    
+}
+table{
+    border: 2px solid red;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+tr, td, th {
+    border-style: solid;
+    border-color: red;
+    padding: 10px;
+    text-align: center;
+   
+}

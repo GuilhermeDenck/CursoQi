@@ -1,0 +1,25 @@
+@charsat "UTF-8";
+
+/*Alterando tudo: */
+/{
+	font-family:verdana,arial;
+}
+
+body{
+	background-color:
+}
+h1,h2{
+	text-shadow:2px 2px 2px white,
+				-2px -2px 2px black;
+}
+img{
+		width:200px;
+		float:left;
+		border:2px solid navy;
+		padding:10px;
+}
+p{
+	text-align:justify;
+	line-height:2;
+	text-indent:25px;
+}

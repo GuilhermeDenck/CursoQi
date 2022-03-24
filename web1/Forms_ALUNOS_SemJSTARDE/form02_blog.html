@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title> Exemplos JAVASCRIPT - JS na veia </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Aula JavaScript, uso do JS inline, incorporado, linkado, objetos e propriedades dos mesmos.">
+	<meta name="author" content="Guilherme Denck::guidenck0303@gmail.com">
+	<meta name="keywords" content="JavaScript, JS, objetos, window, document">
+
+	<style type="text/css">
+		*{
+			font-family:verdana;
+			text-align:center;
+		}
+		input{
+			border-radius:5px;
+			padding:5px;
+			margin:2px;
+		}
+		#esquerda{
+			width:40%;
+			float:left;
+			height:300px;
+			overflow:auto;
+		}
+		#direita{
+			width:60%;
+			float:left;
+		}
+	</style>
+  <script type="text/javascript" src="js/js.js">
+  </script>
+  </head>
+  <body>
+	<h1> Formulario 02 Blog </h1>
+	<div id="esquerda">
+		<div id="caixaMensagem" style="color:red"></div>
+	</div>
+	<div id='direita'>
+		<form method='post' name='form2' id="form2"
+		action="http://www.google.com.br">
+			<label> Comentário </label> <br>
+			<textarea cols="30" rows="6" name="msg" id="msg"></textarea>
+			<br>
+			<input type="button" name="botao" value="Enviar"
+			onclick="mensagem()">
+			<input type="reset" name="botao" value="Limpar">
+		</form>
+	</div>
+
+
+
+  </body>
+ </html>

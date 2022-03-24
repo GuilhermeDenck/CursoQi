@@ -1,0 +1,14 @@
+{
+    "name": "guilherme/aula21",
+    "description": "sistemaderh php7",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Denck",
+            "email": "guidenck0303@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

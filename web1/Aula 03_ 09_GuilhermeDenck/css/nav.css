@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 21vw;
+    background: #5db2b5 url(../img/topo10.jpg) no-repeat center;
+}
+
+.menuPrincipal ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+.menuPrincipal ul li {
+    display: inline-block;
+}
+
+.menuPrincipal ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 16px;
+    transition-duration: 0.4s;
+}
+
+.menuPrincipal ul li a:hover {
+	background-color: #111;
+}

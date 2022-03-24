@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Funcionario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="container">
+       <form method="post" action="index.jsp" class="text-center"> 
+           <h1 class="text-center">Cadastrar Funcionario</h1>
+        <div class="form-group">
+            <div class="text-left w-25 m-auto"> 
+            <label> Nome: </label>
+            </div>
+            <input type="text" name="nome" placeholder="Digite o nome" required="required" class="form-control w-25 m-auto">
+        </div>
+        <div class="form-group">
+            <div class="text-left w-25 m-auto"> 
+            <label> CPF: </label>
+            </div>
+            <input type="text" name="cpf" maxlength="11" placeholder="Digite o CPF" required="required" class="form-control w-25 m-auto">
+        </div>
+           <div class="form-group">
+               <div class="text-left w-25 m-auto">
+                   <label> Cargo: </label>
+               </div>
+             <select name="tipoCargo" required="required" name="cpf" class="form-control w-25 m-auto">
+                 <option></option>
+                 <option value="1">Devi Junior</option>
+                 <option value="2">Devi Pleno</option>
+                 <option value="3">Devi Sênior</option>
+                 <option value="4">Analista Pleno</option>
+                 <option value="5">Testador de Software</option>
+                 <option value="6">Gestor de Projetos</option>
+             </select>      
+            </div>
+           <div class="form-group">
+               <div class="text-left w-25 m-auto">
+               <label> Valor por hora: </label>
+               </div>
+               <input type="number" name="valorhora" placeholder="Digite o valor ganho por hora" required="required" class="form-control w-25 m-auto">
+           </div> 
+           <div class="form-group">
+              <div class="text-left w-25 m-auto"> 
+               <label> Quantidade de Horas: </label>
+               </div>
+               <input type="number" name="quantidadehoras" placeholder="Digite a quantidade de horas trabalhadas" required="required" class="form-control w-25 m-auto">
+           </div>
+           <div class="form-group">
+               <div class="text-left w-25 m-auto">
+               <label> Valor extras 50% </label>
+               <div>
+               <input type="number" name="valorextras50" placeholder="Digite quanto o funcionário ganhará fazendo horas extras durante a semana." class="form-control w-30 m-auto">
+           </div>
+            <div class="form-group">
+                <div class="text-left w-30 m-auto">
+                    <label> Valor extras 100% </label>
+                </div>
+               <input type="number" name="valorextras100" placeholder="digite o quanto o funcionário ganhará fazendo horas extras após as 22:00 e nos finais de semana e feriado." class="form-control w-30 m-auto"> 
+            </div>
+               <div class="form-group">
+                   <div class="text-left">
+                       <label> Dependentes <label>
+                   </div>
+                   <input type="number" name="dependentes" placeholder="digite o numero de depedentes" class="form-control m-auto">     
+               </div>
+               <div class="form-group">
+                   <div>
+                    <label>Tipo de insalubridade: <label>   
+                   </div>
+                   <select name="tipoInsalubre" class="form-control w-30 m-auto">
+                 <option value="0">Nenhum</option>
+                 <option value="1">Mínima</option>
+                 <option value="2">Média</option>
+                 <option value="3">Máxima</option>
+             </select>
+               </div>
+               <div class="form-group text-center">
+                        <input type="submit" name="send" value="Enviar" class="btn btn-outline-primary btn-lg"/>
+                    </div>
+               
+               
+               
+               
+       </form>
+       </section> 
+    </body>
+</html>

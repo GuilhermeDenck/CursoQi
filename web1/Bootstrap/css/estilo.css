@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.jumbotron{
+  margin-bottom: 0 !important;
+}
+
+#empresa, #produto, #galeria, #contato{
+  height: 750px;
+}
+#produto, #contato{
+  background-color: rgb(192, 211, 254);
+}

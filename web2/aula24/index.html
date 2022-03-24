@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Tele Entrega Hershey's</title>
+	</head>
+	<body>
+	<br/>
+	
+	<h1>*-*-*-*-*Lanches Hershey's*-*-*-*-*</h1>
+	<fieldset>
+	<legend> Faça seu pedido</legend>
+		<form action="./controle/teleentrega-controle.php" method="post">
+		
+		<!--Cadastro do Cliente -->
+			<fieldset><legend>Preencha os campos abaixo</legend>
+				<label>Nome: <input type="text" name="txtnome" required>*</label>
+				<label>Email: <input type="email" name="txtemail" required>*</label>
+				<label>Telefone: <input type="number" name="txttelefone" required>*</label>
+			</fieldset>
+			<!--Escolha do Lanche -->
+			<fieldset><legend>Selecione seu lanche</legend>
+				<select name="sellanche" id="lanche">
+					<option value="Cachorro Quente">Cachorro Quente</option>
+					<option value="Prensado">Prensado</option>
+					<option value="Fritas">Fritas</option>
+					<option value="Pizzas">Pizzas</option>
+				</select>
+				<label>Quantidade: <input type="number" name="txtquantidadelanche" required>*</label>				
+			</fieldset>			
+			<!--Escolha da bebida -->
+			<fieldset><legend>Selecione sua bebida</legend>
+				<select name="selbebida" id="bebida">
+					<option value="Refrigerante">Refrigerante</option>
+					<option value="H2O">H2O</option>
+					<option value="Água">Água</option>
+				</select>
+				<label>Quantidade: <input type="number" name="txtquantidadebebida" required>*</label>				
+			</fieldset>
+			
+				<!--Forma de Pagamento -->
+			<fieldset><legend>Escolha a forma de pagamento</legend>
+				<input type="radio" name="rdformapagamento" value="Visa" checked="checked">Visa
+				<input type="radio" name="rdformapagamento" value="Mastercard">Mastercard
+				<input type="radio" name="rdformapagamento" value="Elo Refeição">Elo Refeição
+				<input type="radio" name="rdformapagamento" value="Outros">Outros
+				<fieldset><legend>Deseja tele entrega?</legend>
+					<input type="radio" name="rdteleentrega" value="Sim" checked="checked">Sim
+					<input type="radio" name="rdteleentrega" value="Não">Não
+				</fieldset>
+			</fieldset>
+			
+			
+			<fieldset><legend>Ações</legend>
+				<input type="submit" name="btnEnviar" value="Enviar dados">
+				<input type="reset" name="btnLimpar" value="Limpar dados">
+			</fieldset>
+		</form>
+		
+	</fieldset>
+	</body>
+</html>
+
+
+
+

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+   
+
+    fieldset{
+        width: 70%;
+        margin: 35px auto;
+        box-shadow: 0px 0px 12px 2px black;
+        border: medium double White;
+        padding: 15px;
+        border-radius: 5px;
+        
+    }
+    
+    h2{
+        font-weight: 800;
+        color: rgb(231, 231, 231);
+        font-size: 15px;
+    }
+
+    h1{
+        color:rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    h1, h2{
+        text-shadow: 2px 2px 4px black;
+    }
+
+
+
+    input:focus, select:focus, textarea:focus{
+        background-color:#B0C4DE;
+    }
+
+
+
+  

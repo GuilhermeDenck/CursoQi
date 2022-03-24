@@ -1,0 +1,24 @@
+*, ::before, ::after { box-sizing: border-box; }
+
+body {
+    background-color: black;
+    color: green;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px green dashed;
+}
+
+li ~ li {
+    padding-top: 1em;
+    font-size: .9rem;
+    font-family: monospace;
+}

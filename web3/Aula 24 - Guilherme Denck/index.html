@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adaptação da aula 17">
+    <meta name="keywords" content="Adaptação, aula, 17, java, formulário">
+    <meta name="author" content="Guilherme Denck">
+	
+	<link rel="stylesheet" href="https://
+	stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    <style>
+	
+		
+        fieldset{
+            width: 40%;
+            margin: 50px auto;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        legend{
+            width: auto;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .row{
+            margin-top: 20px;
+        }
+
+        .btn-dark{
+            height: 40px;
+        }
+		
+		
+    </style>
+	
+		<title>Aula 24</title>
+		
+	</head>
+
+
+	<body>
+
+	<form method="post">
+        <fieldset>
+            <legend>Preencha seus Dados</legend>
+           <div>
+                <label>Nome</label>
+                <input type="text" class="form-control">
+           </div>
+			
+		   <div class="row">
+				<div class="col">
+				<label>CPF</label>
+				<input type="text" class="form-control">
+				</div>
+			</div>
+			
+			
+			
+			<div class="row">
+				<div class="col">
+				<label>Valor Por Hora</label>
+				<input type="number" class="form-control">
+				</div>
+			</div>
+
+
+			<div class="col">
+				<label> Quantidade de Horas Trabalhadas</label>
+				<input type="number" class="form-control">
+			</div>	
+			
+			
+			<div class="row">
+				<div class="col">
+				<label>Horas Extras 50%</label>
+				<input type="number" class="form-control">
+				</div>
+			</div>
+
+			<div class="col">
+			
+				<label>Horas Extras 100%</label>
+				<input type="number" class="form-control">
+			</div>
+			
+			
+			<div class="row">
+				<div class="col">
+				<label> Número de Dependentes</label>
+				<input type="number" class="form-control">
+				</div>
+			</div>
+
+
+			<div class="col">
+				<label>Insalubridade</label>
+				<select class="form-control">
+					<option> Sem Insalubridade</option>
+					<option>Mínima | 10%</option>
+					<option>Média | 20%</option>
+					<option>Máxima | 40%</option>
+				</select>
+			</div>
+
+
+
+			<input type="submit" value="Enviar" class="btn btn-primary mt-5 ml-5 w-25 float-left">
+            <input type="reset" value="Limpar" class="btn btn-primary mt-5 mr-5 w-25 float-right">
+
+        </fieldset>
+    </form>
+</body>
+</html> 			

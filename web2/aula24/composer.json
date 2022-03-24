@@ -1,0 +1,14 @@
+{
+    "name": "gui/aula24",
+    "description": "exemplo revisao",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme  Denck",
+            "email": "guidenck0303@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

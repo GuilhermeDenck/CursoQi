@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fomulário - Entrada de Dados do Usuário</title>
+    <meta name="description" content="Trabalhando com formulários, campos de entrada de dados: campo de texto, radios, checkbox, entre outros.">
+    <meta name="keywords" content="Formulários, Interação, Usuário, Campos, Entrada de Dados">
+    <meta name="author" content="Guilherme Denck::guidenck0253@gmail.com">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+        <main>
+            <h1>Preencha com seus dados: </h1>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Cadastro Login: </legend>
+                    <div>
+                        <label for="txtname">Nome:<span>*</span> </label>
+                        <input type="text" name="txtnome" size="25" placeholder="Nome Completo" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="txtapelido">Apelido: </label>
+                        <input type="text" name="txtapelido" size="25" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="txtapelido">e-Mail:<span>*</span> </label>
+                        <input type="text" name="txtapelido" size="25" placeholder="nome@email.com" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="txtapelido">Senha:<span>*</span> </label>
+                        <input type="text" name="txtapelido" size="25" required>
+                    </div>
+                    <br>    
+                    <div>
+                        <label for="txtapelido">Repetir Senha:<span>*</span> </label>
+                        <input type="text" name="txtapelido" size="25" required>
+                    </div>
+                    <div class="botao">
+                    <input type="submit" name="Enviar" value="enviar">
+                    <input type="reset" name="Limpar" value="limpar">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+
+body{
+  /* Imagens no fundo - colocamos no body */
+    background-color: silver;
+}
+
+.geral{
+  width: 100%; /* 900px --- 100%*/
+  margin: 0 auto;
+}
+
+.topo{
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+  background-image: url(../img/topo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.conteudo{
+  width: 100%;
+}
+
+.esquerda, .direita{ /* 230 + 5 + 5 = 240 * 2 =  480 (900 - 480 = 420) */
+  width: 25%;/*230 / 900 = *  100;*/
+  padding: 0.6%; /*5px;*/
+  float: left;
+}
+
+.centro{ /* 420-> padding: 5 + 5 = 10 + margin: 10 + 10 = 30 + 390 largura = 420*/
+  padding: 0.6%;/*5px;*/
+  margin: 0 1.2%; /*10/900 * 100 = */
+  width: 44%; /*390px; */
+  float: left;
+}
+
+p{
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.centro figure{
+  width: 100%;
+}
+
+.centro figure img{
+  width: 70%;
+  max-width: 100%;
+  min-width: 70%;
+}
+
+/*Criar medias de leitura de dispositivos: */
+
+@media screen and (max-width: 900px){
+
+    .geral {
+        width: 100%;
+    }
+
+    .esquerda, .centro {
+        width: 46.4%;
+        padding: 0.6%;
+        margin: 0 1.2%;
+        float: left;
+    }
+    
+    .direita {
+        width: 100%;
+        clear: both; /*Retira qlqr config dos elementos anteriores*/
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .geral {
+        width: 100%;
+    }
+
+    .esquerda, .centro, .direita {
+        width: 99%;
+        margin: 0;
+        float: none;
+        margin-top: 10px;
+        padding: 0.5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .esquerda, .centro {
+        width: 99%;
+        padding: 0.5%;
+        float: none;
+    }
+
+    .direita {
+        display: none; 
+    }
+}

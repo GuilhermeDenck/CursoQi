@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+*{
+	font-family: verdana;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: gold;
+}
+
+header{
+    width: 100%;
+	height: 40%;
+    background: url(../img/bannerTokyo.jpg) no-repeat center;
+}
+
+.menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 16px;
+    transition-duration: 0.4s;
+}
+
+.menu ul li a:hover {
+	background-color: #111;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.conteudo1 {
+    width: 100%;
+    height: 35em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black,
+                -2px -2px 5px black ;
+}
+
+.conteudo2, .conteudo3, .conteudo4 {
+    width: 100%;
+    height: 50em;
+    margin-top: 5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black,
+                -2px -2px 5px black ;
+ }
+
+.conteudo1_texto {
+    clear: both;
+    margin-left: 21em;
+    text-indent: 1em;
+}
+
+.conteudo1 figure {
+    margin-top: 2em;
+    margin-left: 1em;
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+.conteudo1 figure img {
+    width: 100%;
+}

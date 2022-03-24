@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Site em Framework Bootstrap - Criando ums página OnePage</title>
+    <meta name="description" content="Trabalhando com Página One Page através do framework Bootstrap.">
+    <meta name="keywords" content="Bootstrap, Página OnePage, Classes, CSS">
+    <meta name="author" content="Guilherme Denck::guidenck0303@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1º Incorporamos o css do bootstrap: -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 2º Incorporamos o nosso CSS:  -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- 3º Incorporamos o JS do bootstrap: -->
+    <script type="text/javascript" src="js/bootstrap.min.js">
+    </script>
+    <!-- 4º Incorporamos o JQuery do bootstrap: -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js">
+    </script>
+    <!-- 5º Incorporamos o nosso js: -->
+    <script type="text/javascript" src="js/script.js">
+    </script>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <header class="jumbotron text-center">
+          <h1> Modelo Página OnePage </h1>
+      </header>
+      <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+          <li> <a href="#empresa">Empresa</a></li>
+          <li> <a href="#produto">Produtos</a></li>
+          <li> <a href="#galeria">Galeria</a></li>
+          <li> <a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <section id="empresa" class="container-fluid">
+        <div class="row">
+          <aside class="bg-info col-md-4 col-sm-6 col-xs-12 text-justify">
+            <h2 class="text-center">Título Coluna 1 </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </aside>
+          <aside class="bg-white text-justify col-md-4 col-sm-6 col-xs-12">
+            <h2 class="text-center"> Titulo Coluna 2 </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </aside>
+          <figure class="col-md-4 col-sm-12 col-xs-12">
+            <img src="img/logo3.png" alt="Logo do Bootstrap" class="img-fluid img-responsive">
+          </figure>
+        </div>
+      </section>
+      <section id="produto" class="container-fluid">
+
+      </section>
+      <section id="galeria" class="container-fluid">
+
+      </section>
+      <section id="contato" class="container-fluid">
+        <div class="row">
+          <aside class="col-md-6 col-sm-6 col-xs-12">
+            <h2> Deixe sua Mensagem: </h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="txtnome">Nome: </label>
+        <input type="text" name="txtnome" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="txtarea">Mensagem: </label>
+        <textarea name="txtarea" rows="8" cols="30" class="form-control" placeholder="Digite a mensagem aqui..."></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" name="envio" value="Enviar" class="btn btn-primary">
+        <input type="reset" name="limpa" value="Limpar" class="btn btn-primary">
+      </div>
+    </form>
+          </aside>
+          <article class="col-md-6 col-sm-6 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13829.73014993761!2d-51.01756837260491!3d-29.938234816200833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95190b4714bfb357%3A0xbec5d3ce7a440554!2sQI%20Faculdade%20%26%20Escola%20T%C3%A9cnica%20%7C%20Gravata%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1627484437523!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>

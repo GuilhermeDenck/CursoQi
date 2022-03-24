@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.geral{
+	width: 100%;
+	margin: 0 auto;
+}
+.topo{
+	width: 100%;
+	height: 250px; /*A altura será de acordo com a imagem que terá aqui*/
+	background-color: #000;
+}
+.menu{
+	width: 100%;
+	height: 65px;
+	background-color: #333;
+}
+.conteudo{
+	width: 100%;
+	height: 600px;
+}
+.conteudo1{
+	width: 60%;
+	height: 600px;
+	background-color: silver;
+	float: left;
+}
+.conteudoexterno{
+	width: 40%;
+	height: 600px;
+	background-color: lightblue;
+	float: right;
+}
+.rodape{
+	width: 100%;
+	height: 50px;
+	background-color: #333;
+}

@@ -1,0 +1,19 @@
+.cabecalho{
+    width: 100%;
+    height: 30%;
+    background-color: blue;
+}
+
+.inicio{
+    width: 100%;
+    height: 80%;
+    background-color: thistle;
+    float: left;
+}
+
+.contato{
+    width: 100%;
+    height: 40%;
+    background-color: coral;
+    float: left;
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*Imagem no fundo da página: */
+body{
+	background-image: url(../img/fundo07.png);
+	background-color: pink;
+	background-attachment: fixed;/*fixar a imagem de fundo*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+p{
+	color: black;
+	text-align: justify;
+	text-indent: 25px; /*recuo de 1ª linha*/
+	line-height: 2;
+}
+.fundorevisao{
+	background-color: rgba(0,0,0,0.4);
+	width: 80%;
+	margin: 0 auto; 
+	padding: 20px; /*margem interna*/
+	border-radius: 20px;
+}
+.minhaimagem{
+	width: 180px;
+	float: right;
+	padding: 20px;
+}
+/*Seletor encadeado*/
+.minhaimagem img{
+	width: 100%;
+}

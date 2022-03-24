@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.jumbotron{
+  background-color: rgb(112, 219, 252);
+  margin-bottom: 0 !important;
+}
+.titulo{
+  font-weight: bold;
+}
+.display-2{
+  font-family: verdana !important;
+}

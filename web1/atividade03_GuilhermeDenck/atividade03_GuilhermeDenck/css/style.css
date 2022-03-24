@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.container{
+    margin: 1em;
+}
+
+.banner {
+    width: 100%;
+    height: 450px;
+}
+
+.center {
+    text-align:center;
+}
+
+a:is(:visited){
+    color: blue;
+}
+
+hr {
+    border-radius: 100%;
+}
+
+.border {
+    background-color: #fff;
+    outline: 1px solid black;
+    padding: .5em;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px 5px black,
+                -2px -2px 5px black ;
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*Retirar as margem */
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Formatando o main - geral */
+.geral{
+	width: 90%; /*largura*/
+	margin: 0 auto;
+}
+/*Formatando o header - topo: */
+.topo{
+	width: 100%;
+	height: 350px; /*O ideal de altura é entre 120px e 480px*/
+	background-color: #000;
+}
+.menu{
+	width: 100%;
+	height: 60px; /*O ideal de altura é entre 45px até 200px*/
+	background-color: #333;
+}
+.conteudo{
+	width: 100%;
+	height: 600px; /*A altura normalmente não mexemos, ela se adapta ao conteúdo html*/
+	background-color: #fff;
+}
+.rodape{
+	width: 100%;
+	height: 45px; /*O ideal de altura é entre 45px e 150px*/
+	background-color: #333;
+}

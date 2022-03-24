@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+/*Seletor para formatar tudo: */
+*{
+	font-family: verdana;
+}
+/*Formatando fundo das páginas */
+body{
+	background-color: #D3D3D3; /*cor do fundo*/
+}
+/*Formatando paragrafos das páginas*/
+p{
+	text-align: justify; /*Alinhamento justificado*/
+	text-indent: 25px; /*Recuo de 1ª linha*/
+	line-height: 1.5; /*Espaço duplo entre linha - altura*/
+}
+/*Seletores agrupados: */
+h1,h2{
+	font-family: verdana; /*alterando a fonte*/
+	color: #1C1C1C; /*cor do texto*/
+}
+/*Formatando classes: */
+.principal{
+	font-family: 'Akaya Kanadaka', cursive;
+	text-align: center;
+	color: 	#2F4F4F;
+	text-shadow: 2px 2px 2px white,
+				 -2px -2px 2px navy; /*Coloca sombra*/
+}
+/*Formatando a página fundo.html*/
+/*Formatando um id*/
+#especial{
+	background-image: url(../img/fundo08.png);
+	background-attachment: fixed; /*fixar a imagem no fundo*/
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	background-size: 100%;
+}
+/*Formatando a classe caixa da pagina fundo.html*/
+.caixa{
+	background-color: rgba(255,255,255,0.2);
+	width: 80%; /*largura*/
+	margin: 0 auto; /*centralizar elemento*/
+	padding: 20px; /*margem interna*/
+	border-radius: 20px; /*borda arredondada*/
+}
+
+/*Formatando a figura para texto ficar ao lado: */
+/*Formatando a página imagens.html*/
+.figesquerda{
+	width: 200px;
+	float: left;
+}
+/*Seletor encadeado*/
+.figesquerda img{
+	width: 100%;
+}
+/* Formatar a imagem no centro:*/
+.figcentro{
+	width: 180px;
+	margin: 0 auto; /*Centraliza elementos - imagens, tabelas, formulários, div, containers*/
+}
+.figcentro img{
+	width: 100%;
+}
+
+/*Formatando página paragrafos.html*/
+.esquerda{
+	text-align: left;
+}
+.direita{
+	text-align: right;
+}
+.centro{
+	text-align: center;
+}
+.justificado{
+	text-align: justify;
+	margin: 30px;
+	background-image: url(../img/fundo07.png);
+	padding: 20px;
+	font-style: italic; /*Italico*/
+}
+/*Formatando Links:*/
+/*Pseudo-classes: Etapa da tag*/
+/*a:link - Antes de visitar o link*/
+a:link{
+	text-decoration: none; /*Retirar o sublinhado*/
+	color: black;
+	font-weight: bold;
+	line-height: 1.5;
+}
+/*a:visited - Após clicar no link*/
+a:visited{
+	color: #4F4F4F;
+}
+/*a:hover - Ao ir sobre o link */
+a:hover{
+	letter-spacing: 1.5px;
+	text-shadow: 1px 1px 2px black;
+}
+/*a:active - ao clica e segurar o link*/
+a:active{
+	color: black;
+}
+
+/*Formatando a página fontes.html*/
+.arial{
+	font-family: arial;
+}
+.google{
+	font-family: 'Tourney', cursive;
+}
+.tam12pt{
+	font-size: 12pt;
+}
+.tam12px{
+	font-size: 12px;
+}
+.tam1em{
+	font-size: 1em;
+}
+.azul{
+	color: #00f;
+}
+.verde{
+	color: rgb(0,255,0);
+}
+.sombra{
+	text-shadow: 1px 1px 2px yellow;
+}
+.versalete{
+	font-variant: small-caps;
+}
+.italico{
+	font-style: italic;
+}
+.negrito{
+	font-weight: bold;
+}
+.caixaalta{
+	text-transform: uppercase;
+}
+.caixabaixa{
+	text-transform: lowercase;
+}
+
+/*Formatando página listas.html */
+.naoordenada{
+	/*list-style-type: square; /*none, disc, circle, square*/
+	list-style-image: url(../img/iconhtml.png);
+	list-style-position: inside;
+}
+.ordenada{
+	list-style-type: katakana-iroha; /*lower-alpha - letra minuscula - upper-roman = romano */
+}
+/*MENU: */
+.menu{
+	list-style-type: none; /*Retirar o marcador*/
+	margin: 0; /*Margem externo*/
+	padding: 0; /*Mergem interna*/
+	background-color: #333; /*Cor de fundo*/
+	overflow: auto; /*Barra de rolagem automática*/
+}
+.menu li{
+	float: left; /*Alinha um ao lado do outro */
+}
+/*Encadeado:*/
+.menu li a{
+	text-decoration: none; /*Retira sublinhado*/
+	display: inline-block; /*Um ao lado do outro e como formato de botão */
+	background-color: #333;
+	color: white;
+	padding: 20px 25px; /*Estabelece o tamanho da barra do menu. */
+}
+
+/*Formatando a página tabelas.html */
+table{
+	border: 2px solid gray;
+	width: 80%;
+	margin: 0 auto;
+	border-collapse: collapse; /*Colar as bordas*/
+}
+td,th{
+	border: 1px solid silver;
+	padding: 10px;
+}
+.titulo{
+	height: 100px;
+	vertical-align: middle;
+}
+th{
+	background-color: #333;
+	color: #fff;
+}
+/*Formatando as linhas pares: */
+tr:nth-child(even){
+	background-color:#E6E6E6;
+}
+/*Formatando as linhas ímpares: */
+tr:nth-child(odd){
+	background-color: #F2F2F2;
+}
+tr:hover{
+	background-color: silver;
+}
+

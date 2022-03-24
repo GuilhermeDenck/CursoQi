@@ -1,0 +1,14 @@
+{
+    "name": "guilherme/aula27",
+    "description": "projeto final da disciplina de php7 devII",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Denck",
+            "email": "guidenck0303@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

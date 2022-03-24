@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.geral {
+    background-color: silver;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex; /*flex-direction: row; vem por default */
+}
+
+.coluna1, 
+.coluna2 {
+    height: 100%;
+}
+
+.coluna1 {
+    width: 40%;
+    background-color: rgb(213, 141, 244);
+}
+
+.coluna2 {
+    width: 60%;
+    background-color: rgb(186, 244, 238) ;
+}

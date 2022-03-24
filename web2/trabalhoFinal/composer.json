@@ -1,0 +1,14 @@
+{
+    "name": "guilhermerafael/trabalhofinal",
+    "description": "Trabalho final html/css com php e BD",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Denck",
+            "email": "guidenck0303@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+    
+    
+    
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <meta name="description" content="">
+        
+        <meta name="author" content="">
+
+        <title>Ômega Animes</title>
+        
+        <link rel="shortcut icon" href="img/logozinha.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/estiloIndex.css">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
+
+    <body class="container-sm">
+        <article class="jumbotron">
+            <h1 class="display-4">Seja bem-vindo!</h1>
+            <p class="lead">Ômega Animes é um site para você se divertir assistindo animes ou lendo mangás. Aqui temos os animes mais diversos e temos várias categorias como animes de luta, drama, romance, terror entre outros, Aproveite!</p>
+            <a href="/new"><button type="button" class="btn btn-outline-dark p-4 pr-3 pl-3">Cadastrar</button></a>
+        </article>
+
+        <div class="dados">
+            <table cellpadding="10"> 
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Apelido</th>
+                        <th>E-mail</th>
+                        <th>Senha</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr th:each="cadastro : ${listCadastros}">
+                        <td th:text="${cadastro.id}"></td>
+                        <td th:text="${cadastro.nome}"></td>
+                        <td th:text="${cadastro.sobrenome}"></td>
+                        <td th:text="${cadastro.apelido}"></td>
+                        <td th:text="${cadastro.email}"></td>
+                        <td th:text="${cadastro.senha}"></td>
+                        
+                        <td>
+                          <a th:href="@{'/delete/' + ${cadastro.id}}">APAGAR</a>  
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+			&copy; Ômega Animes
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+
+    fieldset{
+        width: 50%;
+        margin: 35px auto;
+        box-shadow: 0px 0px 12px 2px black;
+        border: medium double White;
+        padding: 35px;
+        border-radius: 10px;
+    }
+    
+    h2{
+        font-weight: 800;
+        color: rgb(231, 231, 231);
+        font-size: 15px;
+    }
+
+    h1{
+        color:rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    h1, h2{
+        text-shadow: 2px 2px 4px black;
+    }
+
+    body{
+        background-image: url(../img/fundinho.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: auto;
+        backdrop-filter: blur(10px);
+    }
+
+    input{
+        border-radius:1px;
+        padding:10px;
+        margin:10px;
+    }
+
+    input:focus, select:focus, textarea:focus{
+        background-color:#B0C4DE;
+    }
+
+    input:hover, select:hover, textarea:hover{
+        border:1px solid rgb(38, 150, 255);
+    }
+
+    footer{
+        position: absolute;
+        bottom: 10px;
+        color: white;
+        left: 20px;
+    }
+
+    label{
+        margin-top: 10px;
+    }

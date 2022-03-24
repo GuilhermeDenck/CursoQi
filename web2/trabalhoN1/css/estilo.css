@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/*Formatando todos os elementos: */
+*{
+	margin:0;
+	padding:0;
+}
+/*Tornando o scroll deslizante: */
+html{
+	scroll-behavior:smooth;
+}
+/*Formatando o container main: */
+.geral{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+/*Formatando o container header*/
+.topo{
+	width:100%;
+	height:350px; /*Colocamos a altura do banner: Média de altura de 250px até 500px */
+    background-image: url(../imagens/banner1.jpg);
+}
+.topo h1{
+	color:#fff;
+	text-align:center;
+	line-height:280px;
+	font-size:4vw;
+}
+/*Formatando o container menu nav: */
+.menu{
+	width:100%;
+	height:45px; /*Média de 40px até 100px*/
+	background-color:#fff;
+	text-align:center;
+	position:-webkit-sticky;
+	position:sticky;
+	top:0;
+}
+/*Formatando menu: */
+.menu ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden; /*barra de rolagem - overflow:auto */
+	background-color:#fff;
+	color:#000;
+}
+.menu ul li{
+	display:inline-block; /*alinha um item ao lado do outro*/
+}
+.menu ul li a{
+	display:block;
+	color:#000;
+	padding:14px 16px;
+	width:120px;
+	text-decoration:none;
+	font-family:verdana;
+	border-bottom:4px solid #fff;
+}
+.menu ul li a:hover{
+	border-bottom:4px solid #8B0000;
+}
+/*Formatando todos os containers de conteúdo: */
+.apresentacao, .conteudo2, .conteudo3{
+	width:100%;
+	height:750px;
+}
+/*Formatando conteúdo apresentação: */
+.apresentacao {
+	background-color:#000;
+	color:#fff; /*cor do texto*/
+}
+/*formatando conteudo2: */
+.conteudo2{
+	background-color:silver;
+}
+/*Formatando conteudo3: */
+.conteudo3{
+	background-color:#fff;	
+}
+/*Formatando rodapé: */
+.rodape{
+	width:100%;
+	height:80px; /*Média de 40px até 150px*/
+	text-align:center; /*centralizando na horizontal*/
+	line-height:80px; /* centralizar na vertical */
+	background-color:#8B0000;
+	color:#fff;
+}
+.Titulo{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 55px;
+}
+.paragrafo{
+    padding: 4%;
+    font-size: 25px;
+}
+.lista{
+    padding: 13%;
+	list-style-position: inside;
+	margin-left: 2%;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 20%;
+    
+}
+.text2{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.botao{
+    padding-top: 5%;
+    text-align: center;
+   
+}
+
+
+/*Controle */
+
+fieldset{
+    width: 70%;
+    margin: 35px auto;
+    box-shadow: 0px 0px 12px 2px black;
+    border: medium double White;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+h2{
+    font-weight: 800;
+    color: rgb(231, 231, 231);
+    font-size: 15px;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+h1, h2{
+    text-shadow: 2px 2px 4px black;
+}
+
+
+
+input:focus, select:focus, textarea:focus{
+    background-color:#B0C4DE;
+}
+
+.resposta{
+    color: white;
+}

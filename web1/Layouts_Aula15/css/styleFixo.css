@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+
+body{
+  /* Imagens no fundo - colocamos no body */
+    background-color: silver;
+}
+
+.geral{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.topo{
+  width: 900px;
+  height: 180px;
+  background-color: #fff;
+  background-image: url(../img/topo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.conteudo{
+  width: 900px;
+}
+
+.esquerda, .direita{ /* 230 + 5 + 5 = 240 * 2 =  480 (900 - 480 = 420) */
+  width: 230px;
+  padding: 5px;
+  float: left;
+}
+
+.centro{ /* 420-> padding: 5 + 5 = 10 + margin: 10 + 10 = 30 + 390 largura = 420*/
+  padding: 5px;
+  margin: 0 10px;
+  width: 390px;
+  float: left;
+}
+
+p{
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 20px;
+}

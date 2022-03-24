@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alterando Cores e Trabalhando com Arrays</title>
+    <script type="text/javascript" src="js/js.js">
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Alterando as Cores da Página: </h1>
+      <form method="get" name="cores">
+        <label for="corFundo" id="cores"> Cor do Fundo: </label>
+        <input type="color" name="corFundo" id="cor1">
+        <br>
+        <label for="corTexto" id="cores2"> Cor do Texto: </label>
+        <input type="color" name="corTexto" id="cor2">
+        <br>
+        <input type="button" name="altera1" value="Alterar Cores" onClick="alterarCores()">
+        <input type="button" name="altera2" value="Resetar Cores" onClick="resetarCores()">
+      </form>
+      <h2>Testando Array: </h2>
+      <button type="button" name="colecao" onClick="colecionar()"> Coleção de Frutas </button>
+    </main>
+  </body>
+</html>

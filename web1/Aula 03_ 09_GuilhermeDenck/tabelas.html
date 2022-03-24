@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="scroll-behavior:smooth">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Apostila de Desenvolvimento Web I - Aprendendo HTML, CSS e JS
+		</title>
+		<meta name="author" content="Guilherme Denck::guidenck0303@gmail.com">
+		<meta name="description" content="Site exemplificando as tags, elementos e atributos HTML, assim como estilização CSS">
+		<meta name="keywords" content="Web I, HTML, CSS, JS, Apostila">
+		<link rel="shortcut icon" href="img/iconhtml.png"> 
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" href="./css/nav.css">
+	</head>
+	<body>
+		<main>
+			<header class="bg">
+			
+			</header>
+			<nav class="menuPrincipal">
+				<ul>
+					<li> <a href="titulos.html"> Títulos </a>	</li>
+					<li> <a href="paragrafos.html"> Parágrafos </a></li>
+					<li> <a href="estilos.html"> Estilos </a></li>
+					<li> <a href="imagens.html"> Imagens </a></li>
+					<li> <a href="fontes.html"> Fontes </a></li>
+					<li> <a href="listas.html"> Listas </a></li>
+					<li> <a href="links.html"> Links </a></li>
+					<li> <a href="tabelas.html"> Tabelas </a></li>
+					<li> <a href="fundo.html"> Background </a></li>
+				</ul>
+			</nav>
+
+			<h1 class="principal">
+				Tabelas
+			</h1>
+			<hr>
+			<p>
+				As tabelas são utilizadas para organizarmos dados, as mesmas aparecem muito em sistemas que os dados são provindos do Banco de Dados. <br>
+				Exemplo:
+				&lt;table> &lt;/table>
+			</p>
+			
+			<h2> Exemplo Tabela Simples sem Estrutura HTML5: </h2>
+			<table>
+				<tr>
+					<th colspan="4"> Tabela de Notas </th>
+				</tr>
+				<tr>
+					<th> Nome </th>
+					<th> Nota 1 </th>
+					<th> Nota 2 </th>
+					<th> Média </th>
+				</tr>
+				<tr>
+					<td> Borigodolfa </td>
+					<td> 10 </td>
+					<td> 9,0 </td>
+					<td> 9,5 </td>
+				</tr>
+				<tr>
+					<td> Felizberto </td>
+					<td> 5,0 </td>
+					<td> 8,0 </td>
+					<td> 6,5 </td>
+				</tr>
+				<tr>
+					<td> Onorina </td>
+					<td> 9,5 </td>
+					<td> 7,5 </td>
+					<td> 8,5 </td>
+				</tr>
+				<tr> 
+					<th colspan="4"> Turma 130 </th>
+				</tr>
+			</table>
+			
+			<h2> Tabela com Estrutura HTML5 </h2>
+			<table>
+			  <thead>
+				<tr class="titulo">
+					<th colspan="5"> Tabela de Notas </th>
+				</tr>
+				<tr>
+					<th> Nome </th>
+					<th> Nota 1 </th>
+					<th> Nota 2 </th>
+					<th> Média </th>
+				</tr>
+			  </thead>
+			  <tbody class="centro">
+				<tr>
+					<td class="esquerda"> Borigodolfa </td>
+					<td> 10 </td>
+					<td> 9,0 </td>
+					<td> 9,5 </td>
+				</tr>
+				<tr>
+					<td class="esquerda"> Felizberto </td>
+					<td> 5,0 </td>
+					<td> 8,0 </td>
+					<td> 6,5 </td>
+				</tr>
+				<tr>
+					<td class="esquerda"> Onorina </td>
+					<td> 9,5 </td>
+					<td> 7,5 </td>
+					<td> 8,5 </td>
+				</tr>
+				<tr>
+					<td class="esquerda"> Felizberto </td>
+					<td> 5,0 </td>
+					<td> 8,0 </td>
+					<td> 6,5 </td>
+				</tr>
+				<tr>
+					<td class="esquerda"> Onorina </td>
+					<td> 9,5 </td>
+					<td> 7,5 </td>
+					<td> 8,5 </td>
+				</tr>
+			  </tbody>
+			  <tfoot>
+				<tr> 
+					<th colspan="4"> Turma 130 </th>
+				</tr>
+			  </tfoot>
+			</table>
+			
+			<p>
+				<a href="index.html"> Voltar </a>
+			</p>
+		</main>
+	</body>
+</html>

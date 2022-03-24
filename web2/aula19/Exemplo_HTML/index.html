@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>
+			Layout com Botões - Scrool deslizante
+		</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Página com HTML e CSS, trabalhando com tags, atributos e elementos do HTML, e trabalhando com Seletores, propriedades e valores do CSS">
+		<meta name="keywords" content="HTML, CSS, Designer, Web, JS">
+		<link rel="shortcut icon" href="img/icone.png">
+
+		<link rel="stylesheet" type="text/css" href="css/estilo3.css">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<main class="geral">
+			<header class="topo">
+				<h1>BANNER SITE AQUI</h1>
+			</header>
+			<nav class="menu">
+				<ul>
+				  <li><a href="#apresentacao">Home</a></li>
+				  <li><a href="#conteudo2">Quem Somos</a></li>
+				  <li><a href="#conteudo3">Galeria</a></li>
+				  <li><a href="#conteudo4">Contato</a></li>
+				</ul>
+			</nav>
+			<section class="apresentacao" id="apresentacao">
+				<h2> Home aqui </h2>
+			</section>
+
+			<section class="conteudo2" id="conteudo2">
+				<h2> Quem Somos aqui </h2>
+			</section>
+
+			<section class="conteudo3" id="conteudo3">
+				<h2> Galeria aqui </h2>
+			</section>
+
+			<section class="conteudo4" id="conteudo4">
+				<h2> Contato aqui </h2>
+
+					<form name="" method="POST" action="endereço do arquivo controle">
+						<fieldset class="formulario">
+						<legend>Preencha os dados abaixo:</legend>
+						<label>Nome:</label><input type="text" name="txtnome" required autofocus>
+						<label>Idade:</label><input type="number" name="txtidade" required>
+
+						
+							<legend>Selecione o Curso</legend>
+							<label><input type="radio" name="rdcruso" value="Informatica" checked>Técnico em Informática</label>	
+							<label><input type="radio" name="rdcruso" value="RH">Técnico em RH</label>
+							<label><input type="radio" name="rdcruso" value="Administração">Técnico em Administração</label>
+						
+							<legend>Selecione o turno</legend>
+							<label><input type="checkbox" name="manha" id="manha">Manhã</label>
+							<label><input type="checkbox" name="tarde" id="tarde">Tarde</label>
+							<label><input type="checkbox" name="noite" id="noite">Noite</label>
+						
+							
+							<input type="submit" name="btcadastar" value="Cadastrar">
+							<input type="reset" name="btlimpar" value="Limpar">
+						
+						</fieldset>
+					</form>
+
+			</section>
+			
+			<footer class="rodape">
+				<h3> Rodapé Aqui </h3>
+			</footer>
+		</main>
+	</body>
+</html>

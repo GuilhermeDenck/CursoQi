@@ -1,0 +1,695 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Seção HEADER - borda, altura e largura */
+header {
+    border-bottom: 1px solid #E0E0E0; /* Borda na base da seção */
+    height: 150px;
+    width: 100%; /* 1200px ÷ 1200px = 1 x 100 = 100% *//*Largura do topo*/
+    margin-top: 1em;
+}
+
+/*
+==================
+Logotipo
+==================
+*/
+
+header h1 a {
+    background: url(../img/logo-criar-site-responsivo.png) no-repeat; /* Logotipo */
+    display: block; /* torna o link como um bloco, um retângulo */
+    float: left; /* Posiciona o logotipo à esquerda do site */
+    height: 139px; /* Altura da imagem */
+    text-indent: -9999; /* Recuo para ocultar texto à esquerda */
+    width: 25.16666666666667%; /* 302px ÷ 1200px = 0.251666666666665 x 100 = 25.166666666666665*//* Largura da imagem */
+}
+
+/*
+========================
+nav - menu de navegação
+========================
+*/
+
+nav {
+    float: right; /* Posiciona menu à direita*/
+    margin-top: 78px; /* Distância do menu à margem superior do navegador */
+    text-align: right; /* Alinha os links à direita */
+    width: 66.666666666%; /* 800 ÷ 1200 = 0.4083333333333333 x 100 = 40.83333333333333*//* Largura a seção */
+                              /* correção 800 ÷ 1200 = 0.66666666666 x 100 = 66.666666666*/ 
+}
+
+nav ul {
+    list-style-type: none; /* Retira os marcadores da lista */
+}
+
+nav li {
+    display: inline; /* Deixa o menu na horizontal */
+}
+
+nav ul li a {
+    margin-right: 30px; /* Espaço à direita de cada link do menu */
+}
+
+nav ul li:nth-child(5) a{
+    margin-right: 0px; /* Indica que o 5º elemento da lista (contato) terá a margem direita zerada*/
+}
+
+nav a:link, nav a:visited {
+    color: #999; /* Muda a cor da fonte */
+    font-size: 22px; /* Altera o tamanho da fonte */
+    font-weight: 300; /* Modifica a força da fonte para light */
+    letter-spacing: -2px; /* Espaçamento entra as letras */
+    line-height: 18px; /* Kerning da linha */
+    display: inline-block; /* Links um ao lado do outro */
+}
+
+nav a.ativo:link, nav a:hover {
+    color: #FE9380; /* Indica a página ativa e o link:hover */
+}
+
+body {
+    background: url(../img/background.jpg); /* Inserção da imagem de fundo em todo o site */
+    color: #868686; /* Cor padrão para todas as fontes */
+    font-family: "Opens Sans", Helvetica, sans-serif, arial; /* Definição da fonte geral incorporada do Google Fonts */
+    font-size: 1.125em; /* 18px ÷ 16px = 1.125em *//*tamanho da fonte*/
+    font-weight: 300; /* Indica que a fonte está configurada como Open Sans Light */
+    line-height: 1.222em; /*22px ÷ 18px = 1.2222*//* Altura da linha */
+    text-align: left; /* Alinhamento o texto à esquerda */
+    text-shadow: 1px 1px 0px #fff; /*   Sombreamente para as fontes do site na cor branca */
+}
+
+/*---------------------------------------------
+Seção .CHAMADA <<<<============================
+---------------------------------------------*/
+
+.chamada {
+    height: 290px; /* Aktura do bloco */
+    text-align: center; /* Centralizando o texto */
+    width: 100%; /*1200px ÷ 1200px = 1 x 100 = 100%*//* Definido a largura */
+    margin-top: 4em;
+}
+
+h2 span {
+    font-size: 60px; /* Definindo um tamanho de fonte diferenciado */
+    font-weight: 300; /* suavizando a força das letras */
+    letter-spacing: -2px; /* Espaçamento entra as letras */
+    line-height: 60px; /* Altura da linha */
+}
+
+.chamada h3 {
+    margin: 0 auto; /* Definindo a margem de cabeçalhos de nivel 3 */
+    width: 75%; /* 900px ÷ 1200px = 0.75 x 100 = 75%*//* Definindo uma largura fixa. */
+    margin-top: 3em;
+}
+
+/*-----------------------------------------------------
+Seção .CONTAINER - Conteúdo com 3 colunas <<<<<========
+-----------------------------------------------------*/
+
+.container {
+    background-color: #FE9481; /* Cor do plano de fundo de div */
+    height: 417px; /* Altura do bloco */
+    padding: 2.5%; /*30px ÷ 1200px = 0.025 x 100 = 2.5%*//* Espaçamento interno maior */
+    width: 95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*//*espaçamento interno maior*/
+    max-width: 100%; /* Largura máxima do bloco */
+    margin: 0 auto;
+}
+
+/*Imagens*/
+
+.container figure {
+    margin: 10px auto 0px auto; /*definição das margens das imagens*/
+    text-align: center; /*alinhamento centralizado*/
+    width: 250px;
+}
+
+img {
+    max-width: 100%; /*define a largura máxima em até 100%*/
+}
+
+.container .desktop figure, .container .tablet figure, .container .mobile figure {
+    width: 69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
+}
+
+.desktop, .tablet, .mobile { /* DEFINIÇÃO DOS BLOCOS DE TEXTO UM AO LADO DO OUTRO */
+    float: left; /* define o posicionamento do bloco para cia e esquerda */
+    position: relative; /* Posicionamento responsivo */
+    text-align: center; /* Alinhamento do texto centralizado */
+    width: 31.57894736842105%; /*360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*//* Largura dos blocos */
+}
+
+.desktop, .tablet {
+    margin-right: 2.631578947368421%; /*30px ÷ 1140px = 0.02631578947368421 x 100 = 2.631578947368421*//* Espaçamento entra os blocos */
+}
+
+.mobile {
+    background-color: #9C8CB9; /* Muda a cor de fundo do bloco mobile */
+    margin-right: 0px; /* Margin da direita definida */
+}
+
+.desktop {
+    background-color: #FE9481; /* Nyda a cor de fundo do bloco desktop */
+}
+
+.tablet {
+    background-color: #FCDA92; /* Muda a cor de fundo do bloco tablet */
+}
+
+
+
+/*
+=======================
+Formatação do texto
+=======================
+*/
+
+.container h3 {
+    color: #FFF; /* Cor da letra branca */
+    font-size: 32px; /* Tamanho da letra */
+    font-weight: 300; /* Definição do peso da fonte */
+    letter-spacing: -2px; /* Espaço entre as letras */
+    margin-bottom: 30px; /* Espaçamento da margem inferior */
+    text-shadow: none; /* Remoção do sombreamento das letras */
+}
+
+.container p {
+    background-color: #fff; /* Cor do fundo dos parágrafos */
+    float: left; /* Posicionamento dos parágrafos */
+    height: 160px; /* Definição da altura dos parágrafos */
+    padding: 7px; /* Definição da margem interna dos parágrafos */
+    position: absolute; /* Posicionamento fixo dos parágrafos */
+    max-width: 550px; /* Altura máxima */
+    text-align: justify; /* Alinhamento justificado */
+    top: 225px; /* Definição da margem do topo */
+}
+
+/*
+============================
+Formatação do botão
+============================
+*/
+span.btn { /* definição dos links "leia mais" */
+    font-size: 20px; /* tamanho da fonte */
+    font-weight: 400; /* peso da fonte */
+    letter-spacing: -2px; /* espaçamento das letras */
+    height: 27px; /* altura das letras */
+    margin-top: 80px; /* margem superior */
+    position: absolute; /* posicionamento fixo */
+    right: 1px; /* espaçamento à direita */
+    text-align: center; /* alinhamento centralizado  */
+    text-shadow: none; /* sem sombreamento nas letras */
+    width: 120px; /* largura do span */
+  }
+  
+span.btn a {
+    color: #fff; /* definição da cor da fonte */
+    padding: 2px 4px; /* espaçamento interno */
+}
+  
+/*
+===========================================================
+ definição da cor de fundo de cada link "leia mais" 
+=========================================================== 
+*/
+  
+.desktop span.btn a {
+    background-color: #FE9481;
+}
+  
+.tablet span.btn a {
+    background-color: #FCDA92;
+}
+  
+.mobile span.btn a {
+    background-color: #9c8cb9;
+}
+
+/*------------------------------------------------------------
+Seção FOOTER - Rodape com 2 colunas <<<<<<====================
+------------------------------------------------------------*/
+
+footer {
+    clear: both; /* define o posicionamento */
+    height: 50px; /* altura */
+    padding: 10px 0px; /* espaçamento interno */
+    width: 100%px; /* largura */
+}
+  
+.copyright { /* posicionamento do logo */
+    float: left;
+}
+  
+.desenvolvedor { /* largura do logo */
+    float: right;
+}
+  
+
+.center {
+    margin: 0 auto; /* Centralizado o conteúdo no navegador */
+    width: 1200px; /* largura do layout */
+    width: 90%; /* Ajuste do layoyut à tela */
+}
+
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos evitando que os floats se aglomerem. */
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* FIm do clearfix */
+
+img, picture, video, embed {
+    max-width: 100%; /* Define a largura máxima em até 100% */
+}
+
+h1, h2 {
+    color: #FE9380; /* Cor das letras de cabeçalho de nivel 1 e 2 */
+    font-size: 60px; /* Tamanho da fonte */
+    font-weight: 800; /* "Peso" da fonte (negrito) */
+    letter-spacing: -3px; /* Espaçamento entre as letras */
+    line-height: 60px; /* Altura das linhas (espaçamento entra as linhas ou kerning */
+}
+
+h3 {
+    font-size: 32px; /* Tamanho da fonte */
+    font-weight: 300; /* "peso" da fonte (negrito) */
+    letter-spacing: -2px; /* Espaçamento entre as letras */
+    line-height: 38px; /* Alturas das linhas (espaçamento entra as linhas ou kerning) */
+}
+
+p {
+    font-weight: 300; /* Modifica a força da fonte para light */
+    letter-spacing: -1px; /* Espaçamento entra as letras */
+}
+
+a, a:link, a:visited {
+    color: #FE9380; /* cor dos links */
+    font-weight: 400; /* Modifica a força da fonte para "semi-bold" */
+    text-decoration: none; /* Retira o sublinado dos links */
+}
+
+a:hover {
+    color: #FE5e41; /* Cor dos links no momento em que o mouse passa por cima dele */
+    text-decoration: underline; /* Insere uma linha sob o link quando pasar o mouse */
+    text-shadow: none; /* Retira a sombra da fonte quando passar o mouse */
+}
+
+
+
+/*
+=================
+MEDIA QUERIES
+=================
+
+1200px - desktop, notebooks, com monitores widescreen
+*/
+
+@media screen and (max-width: 1200px) {
+    .chamada h3 {
+        font-size: 1.66666666667em; /* 30px ÷ 18px */
+    }
+
+    .container h3 {
+        font-size: 1.55555555556em; /* 28px ÷ 18px */
+    }
+
+    .container p {
+        height: 170px;
+        top: 217px;
+    }
+
+    span.btn {
+        margin-top: 2.5em;
+    }
+}
+
+/*
+960px - Tablets no formato paisagem e alguns monitores mais antigos
+*/
+
+@media screen and (max-width: 960px) {
+    header h1 a {
+        width: 37.5%; /* 360px ÷ 960px*/
+    }
+
+    nav {
+        width: 62.5%; /* 600px ÷ 960px */
+    }
+
+    h2 {
+        font-size: 2.66666666667em; /* 48px ÷ 18px */
+    }
+
+    /* Chamada */
+    .chamada {
+        height: 320px;
+    }
+        .chamada h3 {
+            font-size: 1.5em; /* 27px ÷ 18px */
+            width: 88.541666666%; /* 850px ÷ 960px = 0.88541666666 x 100 = 88.541666666 */
+
+        }
+
+    
+    /* Container */
+    .container {
+        height: 425px;
+        padding: 3.125%; /* 30px ÷ 960px = 0.03125 x 100 = 3.125%*/
+        width: 93.75%; /* 100% (960px) - 6.25% de padding (direita e esquerda) = 92.1875% */
+    }
+        .desktop, .tablet, .mobile {
+            width: 31.45833333333333%; /* 302px ÷ 960px = 0.31458333333 x 100 = 31.458333333%*/
+        }
+
+        .container .desktop figure, .container .tablet figure, .container .mobile figure {
+            width: 66.225165562%; /* 200px ÷ 302px = 0.66225165562 x 100 = 66.225165562%*/
+        }
+
+            .container img {
+                height: 100px;
+            }
+
+        .container h3 {
+            font-size: 1.66666666667em; /* 30px ÷ 18px =  */
+        }
+
+        .container p {
+            font-size: 0.83333333333em; /* 15px ÷ 18px */
+            top: 230px;
+        }
+}
+
+/* 768px - Tablets no formato retrato, com o iPad */
+
+@media screen and (max-width: 768px) {
+    /* cores dos links e h2 */
+    h2, a, a:link, a:visited {
+        color: #fbca61;
+    }
+
+    a:hover {
+        color: #F9AD0F;
+    }
+
+    /* header */
+    header {
+        height: 195px;
+        text-align: center;
+    }
+
+        header h1 a {
+            background-position: 57% 0;
+            height: 126px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        nav {
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+
+            nav a.ativo:link, nav a:hover {
+                color: #FBCA61;
+            }
+    /* .chamada */
+    .chamada {
+        height: 300px;
+    }
+        h2 {
+            font-size: 2.22222222222em; /* 40px ÷ 18px */
+        }
+
+        .chamada h3 {
+            font-size: 1.11111111111em; /* 20px ÷ 18px */
+        }
+    /* .container */
+    .container {
+        background-color: #FCDA92;
+        height: 380px;
+        padding: 3.90625; /* 30px ÷ 768px = 0.0390625 x 100 = 3.90625% */
+        width: 92.1875%; /* 100% (768) - 7.8125% de padding (direita e esquerda) = 92.1875% */
+    }
+        .desktop, .tablet, .mobile {
+            width: 31.25; /* 240px ÷ 768px */
+        }
+
+        .container .desktop figure, .container .tablet figure, .container .mobile figure {
+            width: 62.25%; /* 150px ÷ 240px*/
+        }
+
+            .container img {
+                height: 80px;
+            }
+
+        .container h3 {
+            font-size: 1.66666666667em; /* 30px ÷ 18px */
+        }
+        
+        .container p {
+            font-size: 0.77777777777em; /* 14px ÷ 18px */
+            height: 140px;
+            line-height: 1.14285714286em; /* 16px ÷ 14px = 1.14285714286 */
+            padding: 2.916666666%; /* 7px ÷ 240px = 0.02916666666 x 100 = 2.916666666*/
+            top: 215px;
+        }
+            span.btn {
+                font-size: 1.11111111111em; /* 20px ÷ 18px = 1.11111111111*/
+                letter-spacing: -0.1em; /* -2px ÷ 20px = -0.1em */
+                height: 22px;
+                margin-top: 20px;
+                position: absolute;
+                width: 50%;
+            }
+
+            span.btn a {
+                padding: 2px 3.333333333%; /* 4px ÷ 120px = 0.03333333333 x 100 = 3.333333333*/
+            }
+}
+
+/* 480 - Smarthphones no formato paisagem com tela pequena */
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    /* cores dos links e h2 */
+    h2, a, a:link, a:visited {
+        color: #9C8CB9;
+    }
+
+    a:hover {
+        color: #745F9A;
+    }
+
+    /* Header */
+    header {
+        border-bottom: none;
+        height: auto;
+        text-align: center;
+    }
+        header h1 a {
+            background-position: 50% 0;
+            display: inherit;
+            height: 126px;
+            width: 100%;
+        }
+    /* menu nav*/
+    nav {
+        clear: both;
+    }
+        nav li {
+            background-color: #9C8CB9;
+            display: block;
+        }
+
+        nav ul li a {
+            height: 40px;
+            margin: 0 auto;
+            padding: 3px;
+            text-align: center;
+            text-shadow: none;
+            width: 100%;
+            padding-top: .7em;
+        }
+
+        nav li a:link {
+            color: #FFF;
+            font-size: 1.38888888889em; /* 25px ÷ 18px */
+        }
+
+        nav li a.ativo:link, nav li a:hover, nav li a:visited {
+            background-color: #745F9A;
+            color: #FFF;
+            text-decoration: none
+        }
+
+        nav li a.ativo:hover, nav li a.ativo:visited {
+            background-color: #9C8CB9;
+        }
+
+    
+    /* Chamada */
+    .chamada {
+        height: 140px;
+        margin-top: 25px;
+    }
+
+        h2 {
+            font-size: 1.5rem; /* 26px ÷ 18px */
+            letter-spacing: -0.07em; /* 2px ÷ 26px */
+            margin-bottom: 15px;
+        }
+
+        h2 span {
+            font-size: 1.5rem;
+            letter-spacing: -0.07em;
+        }
+
+        .chamada h3{
+            display: none;
+        }
+
+    /* .container */
+
+    .container {
+        background-color: #9C8CB9;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+        .container .desktop, .container .tablet, .container .mobile {
+            float: none;
+            height: 160px;
+            width: 100%;
+        }
+        
+        .container .desktop figure, .container .tablet figure, .container .mobile figure {
+            float: left;
+            height: 160px;
+            margin: 0;
+            padding: 0;
+            width: 53.125%; /* 255px ÷ 480px */
+        }
+
+        .container h3 {
+            margin-top: 30px;
+            width: 46.875; /* 225px ÷ 480px */
+            margin: 0 auto;
+            padding-top: 1.5em;
+        }
+
+            .container .desktop figure img, .container .tablet figure img, .container .mobile figure img {
+                height: 125px;
+                margin-top: 15px;
+                width: 97.77777777777778%; /* 220px ÷ 225 */
+            }
+
+        .container p{
+            display: none; /* oculta o parágrafo */
+        }
+
+    /* footer */
+
+    .copyright, .desenvolvedor {
+        float: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .desenvolvedor figure {
+        width: inherit;
+    }
+}
+
+/* 320px - Smartphones no formato retrato com tela pequena */
+
+@media screen and (max-width: 320px) {
+
+    /*cores dos links e h2 */
+    h2, a, a:link, a:visited {
+        color: #79E1D5;
+    }
+
+    a:hover {
+        color: #2FD0BC;
+    }
+
+    /* Menu nav */
+    nav li {
+        background-color: #79E1D5;
+    }
+
+        nav li a:link {
+            color: #555;
+        }
+
+        nav li a.ativo:link, nav li a:hover, nav li a:visited {
+            background-color: #2FD0BC;
+            color: #FFF;
+        }
+        
+        nav li a.ativo:link, nav li a:hover, nav li a:visited {
+            background-color: #2FD0BC;
+            color: #FFF;
+        }
+
+        nav li a.ativo:hover, nav li a.ativo:visited {
+            background-color: #2FD0BC;
+        }
+
+    /* .chamada */
+
+    .chamada {
+        height: 130px;
+        margin-top: 20px;
+    }
+
+        h2 {
+            font-size: 1.11111111111em; /* 20px ÷ 18px */
+            margin-bottom: 15px;
+        }
+
+    .chamada h3 {
+        font-size: 0.77777777777em; /* 14px ÷ 18px */
+    }
+
+    /* Container */
+
+    .container .desktop, .container .tablet, .container .mobile {
+        float: none;
+        height: 160px;
+        width: 100%;
+    }
+
+    .container .desktop figure, .container .tablet figure, .container .mobile figure {
+        float:  left;
+        width: 100%;
+    }
+
+    .container h3 {
+        display: none;
+    }
+
+    .container p {
+        display: none ; /* Oculta o parágrafo */
+    }
+}
+

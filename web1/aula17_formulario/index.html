@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fomulário - Entrada de Dados do Usuário</title>
+    <meta name="description" content="Trabalhando com formulários, campos de entrada de dados: campo de texto, radios, checkbox, entre outros.">
+    <meta name="keywords" content="Formulários, Interação, Usuário, Campos, Entrada de Dados">
+    <meta name="author" content="Guilherme Denck::guidenck0303@gmail.com">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <main>
+      <section class="conteudo">
+        <h1>Formulário de Dados</h1>
+        <p>
+          Utilizamos os forms para capturar a interação do usuário com o site, site respondendo uma enquete, cadastrando-se, dando sua opnião... <br>
+          <strong> Exemplo: &lt;form method="post"> &lt;/form></strong>
+        </p>
+        <form action="" method="post">
+        <fieldset class="dados">
+            <legend>Dados Pessoais</legend>
+            <label for="txtnome">Nome:</label>
+            <input type="text" name="txtnome" size="30" required> <br>
+            <label for="dtnascimento">Data de Nascimento:</label>
+            <input type="date" name="dtnascimento">
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required> &nbsp;&nbsp;&nbsp;
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" size="10" maxlength="8" required>
+            <br>
+            <label for="txtendereco">Endereço:</label>
+            <input type="text" name="txtendereco" size="30">
+            &nbsp;&nbsp;&nbsp;
+            <label for="txtnumber">N</label>
+            <input type="number" name="txtnumber" size="10">
+            <label for="txtcidade">Cidade:</label>
+            <input type="text" name="txtcidade" size="30">&nbsp;&nbsp;&nbsp;
+            <label for="sltestado">Estado:</label>
+            <select name="sltestado">
+                <option value="vazio">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+            </select>
+            <br>
+            <label for="rdsexo">Sexo:</label>
+            <br>
+            <input type="radio" name="rdsexo" value="feminino">Feminino <br>
+            <input type="radio" name="rdsexo" value="masculino">Masculino <br>
+            <input type="radio" name="inderteminado" value="Inderteminado"> Inderteminado <br>
+            <label for="chkinteresse">Assuntos de seus Interesses: </label> <br>
+            <input type="checkbox" name="chkinteresse" value="Tecnologia">Tecnologia <br>
+            <input type="checkbox" name="chkinteresse" value="Jogos">Jogos<br> <input type="checkbox"
+                name="chkinteresse" value="Filmes">Filmes<br>
+            <input type="checkbox" name="chkinteresse" value="Outros">Outros<br>
+        </fieldset>
+        <fieldset class="dados">
+            <legend>Dados Acadêmicos</legend>
+            <label for="sltescola">Escolaridade</label>
+            <br>
+            <select name="sltescola" size="4" multiple>
+                <option value="fundamental">Ensino Fundamental</option>
+                <option value="medio">Ensino Médio</option>
+                <option value="tecnico">Ensino Técnico</option>
+                <option value="graduacao">Graduação</option>
+                <option value="pos">Especialização</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+            </select>
+            <br>
+            <label for="txtcurso">Cursos: </label>
+            <br>
+            <textarea name="txtcursos"  cols="30" rows="8" placeholder="Digite seus cursos aqui..."></textarea>
+
+
+        </fieldset>
+        <fieldset class="dados">
+          <legend>Dados Profissionais</legend>
+          <label for="filecurriculo">Anexe seu curriculo aqui: </label>
+          <input type="file" name="filecurriculo">
+        </fieldset>
+        <input type="submit" name="envia" value="Enviar">
+        <input type="reset" name="limpa" value="Limpar">
+
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

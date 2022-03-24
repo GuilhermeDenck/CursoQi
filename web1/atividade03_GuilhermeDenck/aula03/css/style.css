@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+
+body {
+    background-color: #D3D3D3;
+}
+
+p{
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 2;
+}
+
+h1, h2{
+    font-family: verdana;
+    color: #1C1C1C;
+    text-shadow: 2px 2px 2px white,
+                 -2px -2px 2px navy;
+}
+
+.principal {
+    font-family: 'Akaya Kanadaka', cursive;
+    text-align: center;
+    color: #2F4F2F;
+}
+
+#especial {
+    background-image: url(../img/fundo08.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size: 100%;
+}
+
+.caixa {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.figesquerda {
+    width: 200px;
+    float: left;
+}
+
+.figesquerda img {
+    width: 100%;
+}

@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h2 {
+  display: none;
+}
+
+/* HEADER */
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 10000;
+  background-color: #222951;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: .8rem;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+#menu a {
+  display: block;
+}
+
+#menu a, #logo {
+  border-bottom: transparent 2px solid;
+  transition: .3s;
+  text-decoration: none;
+  color: white;
+}
+
+#menu a:hover, #logo:hover {
+  border-bottom: aqua 2px solid;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    padding-left: 0px;
+    height: 0;
+    z-index: 1000;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  body #menu{
+    background: #222951;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem .5rem;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+    transition: .3s
+  }
+
+  #menu a:hover {
+    border-bottom: 2px solid aqua;
+  }
+
+
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid white;
+    width: 20px;
+    transition: .2s;
+  }
+
+  #hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background: white;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top: 2px solid transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -7px;
+  }
+}
+
+#home {
+	width: 100%;
+	height: 100vh;
+}
+
+.intro-video {
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	z-index: -1;
+}
+
+#lendas {
+	width: 100%;
+	height: 100vh;
+	padding-top: 7em;
+}
+
+.container {
+	width: 80vw;
+	background-color: #222951;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	margin: 0 auto;
+	border-radius: 25px 25px;
+  box-shadow: 2px 2px 5px black,
+              -2px -2px 5px black;
+}
+
+.coluna {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+#lendas .container .personagem {
+	width: 10%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#lendas .container .personagem img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.personagem span{
+	color: white;
+}
+
+#funcoes {
+	width: 100%;
+	height: 100vh;
+	padding-top: 7em;
+  display: flex;
+  align-items: center;
+}
+
+
+#funcoes .container {
+  display: grid;
+  row-gap: 5em;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+#modos {
+	width: 100%;
+	height: 100vh;
+	padding-top: 7em;	
+}
+
+#modos .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  background-color: #222951; 
+
+}
+
+#form {
+	width: 100%;
+	height: 100vh;
+	padding-top: 7em;	
+}
+
+#rodape {
+	background-color: black;
+	height: 11vh;
+}
+
+#rodape .footer {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	padding-top: .9em;
+}
+
+#rodape .nomes, #rodape .email {
+	list-style-type: none;
+	color: white;
+}
+
+.btn-dark {
+  background-color: #222951;
+}
+
+
+.botaoAssassino {
+  background: url(../img/assassino.png);
+  width: 100px;
+  height: 100px;
+  border: none;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+
+.botaoVarguarda {
+  background: url(../img/vanguarda.png);
+  width: 100px;
+  height: 100px;
+  border: none;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+
+.botaoAtirador {
+  background: url(../img/atirador.png);
+  width: 100px;
+  height: 100px;
+  border: none;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+
+.botaoLutador {
+  background: url(../img/lutador.png);
+  width: 100px;
+  height: 100px;
+  border: none;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+
+.botaoEspecialista {
+  background: url(../img/especialista.png);
+  width: 100px;
+  height: 100px;
+  border: none;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+
+.botaoSuporte {
+  background: url(../img/suporte.png);
+  width: 100px;
+  height: 100px;
+  border: none;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (max-width: 1440px) {
+  #rodape {
+    background-color: black;
+    height: 12vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  #lendas .container .personagem {
+    width: 12%;
+    height: 125px;
+  }
+
+  #modos .container figure {
+      width: 46%;
+      height: auto;
+    }
+
+  #modos .container figure img {
+      width: 100%;
+      height: 100%;
+  } 
+
+  #rodape {
+    background-color: black;
+    height: 12vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #lendas .container .personagem {
+    width: 15%;
+    height: 125px;
+  }
+
+  #rodape {
+    background-color: black;
+    height: 12vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #lendas .container .personagem {
+    width: 65px;
+    height: 95px;
+  }
+
+  #modos .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #modos .container figure {    
+    width: 258px;
+    height: auto;
+  }
+
+  #rodape {
+    background-color: black;
+    height: 20vh;
+  }
+  
+  #rodape .nomes {
+    padding: 0;
+    font-size: 15px;
+  }
+
+  #rodape .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container{
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #funcoes .container {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
+
+  .botaoAssassino {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .botaoVarguarda {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .botaoAtirador {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .botaoLutador {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+  .botaoEspecialista {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  .botaoSuporte {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  
+}

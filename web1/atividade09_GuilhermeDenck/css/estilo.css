@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+h1 {
+    padding-left: 6em;
+}
+
+table {
+    border: 2px solid gray;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: .5em;
+}
+
+img {
+    width: 2em;
+    height: 2em;
+}
+
+th {
+    text-align: left;
+    background-color: rgb(188, 248, 240);
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
